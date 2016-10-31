@@ -1,0 +1,15 @@
+{
+  "name": "openrec棒読み連携",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "ローカルの棒読みちゃんとソケット通信で連携します",
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.openrec.tv/live/*"],
+      "js": ["jquery-2.1.4.min.js", "background.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
